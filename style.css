@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', cursive;
+}
+
+body, main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.img{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.img span{
+    color: #A81E7D;
+    font-size: 10vw;
+}
+
+div.img h1{
+    color: #F26FCD;
+    font-size: 3vw;
+    margin: 74px;
+}
+
+div.other{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+form h1{
+    color: #F26FCD;
+    font-weight: 800;
+    margin: 0;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+fieldset input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    
+}
+
+fieldset input::placeholder{
+    color: #f0ffff3f;
+}
+
+fieldset label{
+    color: #f0fffff5;
+    margin-bottom: 10px;
+}
+
+input.botao{
+    width: 100%;
+    padding: 16px 0;
+    margin: 26px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;;
+    color: #2b134b;
+    background-color: #F26FCD;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+}
+
+input.botao:hover{
+    background-color:#701255;
+    color: #F26FCD;
+}
+
+form P{
+    color: #f0ffff94;
+    font-size: 15px;
+}
+
+form a{
+    text-decoration: none;
+    color: #A81E7D;
+    
+}
+
+form a:hover{
+    
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 950px) {
+    form {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    div#main {
+        margin-bottom: 10px;
+    }
+
+    div.img h1 {
+        display: none;
+    }
+
+    div.img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+        margin: 10px;
+    }
+
+    div.img span {
+        margin: 5px;
+        font-size: 10vw;
+    }
+
+    div.other  {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    form p {
+        font-size: 14px;
+    }
+
+}
